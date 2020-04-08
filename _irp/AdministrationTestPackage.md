@@ -1,7 +1,7 @@
 ---
 title: Administration Test Package Specification
 date: 2016-06-07
-docurl: /documents/AdministrationTestPackageFormat.pdf
+docurl: /smarterapp.github.io/documents/AdministrationTestPackageFormat.pdf
 status: Release
 version: 1.0
 ---
