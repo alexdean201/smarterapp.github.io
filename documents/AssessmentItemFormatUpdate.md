@@ -17,21 +17,9 @@ Smarter Balanced is providing sample items in QTI 3.0 format. This is intended t
 
 Included with the sample content is an item log, listing additional details about the items. 
 
-[SB_QTI_ExampleItems.xlsx](https://alexdean201.github.io/smarterapp.github.io/documents/SB_QTI_ExampleItems.xslx)
+[SB_QTI_ExampleItems.xlsx](https://alexdean201.github.io/smarterapp.github.io/documents/SB_QTI_ExampleItems.xlsx)
 
-An explanation of the various codes contained in the log:
-
-|Code|Definition|
-|----|----------|
-|TTS|Text to Speech|
-|BRF|Files in Braille Ready Format|
-|PRN|Files ready to print to a braille embosser|
-|EG|English glossary|
-|ASL|American Sign Language|
-|Span|Spanish translation|
-|TG|Text glossary|
-|IG|Illustration glossary|
-|CC|Closed Caption|
+An explanation of the various codes contained in the log are included on the DataDictionary tab in the file.
 
 # Mapping Document
 
