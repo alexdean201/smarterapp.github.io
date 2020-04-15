@@ -15,9 +15,11 @@ Smarter Balanced is providing sample items in QTI 3.0 format. This is intended t
 
 # Sample Content Item Log
 
-Included with the sample content is an item log, listing additional details about the items. An explanation of the various codes contained in the log:
+Included with the sample content is an item log, listing additional details about the items. 
 
 [SB_QTI_ExampleItems.xlsx](https://alexdean201.github.io/smarterapp.github.io/documents/SB_QTI_ExampleItems.xslx)
+
+An explanation of the various codes contained in the log:
 
 |Code|Definition|
 |----|----------|
