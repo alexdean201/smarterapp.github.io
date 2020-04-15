@@ -24,7 +24,7 @@ Included with the sample content is an item log, listing additional details abou
 |TTS|Text to Speech|
 |BRF|Files in Braille Ready Format|
 |PRN|Files ready to print to a braille embosser|
-|EG| |
+|EG|English glossary|
 |ASL|American Sign Language|
 |Span|Spanish translation|
 |TG|Text glossary|
