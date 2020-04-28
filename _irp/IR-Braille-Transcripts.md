@@ -3,7 +3,7 @@ title: Braille Transcripts - Implementation Readiness
 date: 2017-05-05
 status: Release
 version: 1.0
-display: 8
+display: "008"
 ---
 
 # Introduction
