@@ -40,8 +40,8 @@ td {
 			{% assign parts = entry | split: '`' %}
 			<tr>
 				<td>
-				<a href="{{ parts[1] }}">{{ parts[3] }}</a><br/>
-				<td>{{ parts[0] | date_to_string }}</td>				
+				<a href="{{ parts[2] }}">{{ parts[4] }}</a><br/>
+				<td>{{ parts[1] | date_to_string }}</td>				
 			</tr>
 			{% endfor %}
 		</table>
