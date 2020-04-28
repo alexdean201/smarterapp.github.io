@@ -28,7 +28,7 @@ td {
 {% capture ulist %}
 		{% for post in site.irp %}
 		{% unless forloop.first %}|{% endunless %}
-		{{ post.date }}`{{ post.docurl }}`{{ post.url }}`{{ post.title }}`{{ post.status }}`{{ post.version }}`{{ post.content }}
+		{{post.display}}`{{ post.date }}`{{ post.docurl }}`{{ post.url }}`{{ post.title }}`{{ post.status }}`{{ post.version }}`{{ post.content }}
 		{% endfor %}
 {% endcapture %}
 {% assign slist = ulist | split: '|' | sort %}
