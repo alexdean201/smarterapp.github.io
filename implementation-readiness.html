@@ -36,7 +36,7 @@ td {
 				<th>Name</th>
 				<th style="width: 6.5em;">Date</th>				
 			</tr>
-			{% for entry in slist reversed %}
+			{% for entry in slist %}
 			{% assign parts = entry | split: '`' %}
 			<tr>
 				<td>
