@@ -1,0 +1,491 @@
+<html>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" /> 
+<style>
+        html {
+        -webkit-print-color-adjust: exact;
+        }
+    body {
+        background-color: white;
+        font-family: Verdana !important;   
+         }
+    #stimulus{           
+            padding-left: 25px;
+            font-family: Verdana; 
+            font-size: 1.003em; 
+            font-style: normal; 
+            font-variant: normal; 
+            font-weight: normal; 
+           
+    }     
+    .subTitle{
+            padding-top: 8px;
+            font-family: Verdana; 
+            font-size: 1.003em;             
+            font-weight: bold; 
+           
+    }
+     .itemNo{
+            padding: 8px;
+            font-family: Verdana; 
+            font-size: 1.003em;              
+            font-weight: bolder;             
+            text-align: center;   
+            -webkit-print-color-adjust: exact;    
+            background-color: #dbdbdb;    
+    }
+    
+    
+    .itemContent{
+        padding-top: 8px;
+        padding-left: 25px;
+            font-family: Verdana; 
+            font-size: 1.003em; 
+            font-style: normal; 
+            font-variant: normal; 
+            font-weight: normal; 
+           
+    }
+    .item{
+        padding-top: 10px;            
+           
+    }
+    .hrlinewithBlue{        
+        border-top: 1px solid #477a8c;
+        margin-top: 1.5px;
+    }
+    .answerOptions{
+            padding-top: 8px;
+            padding-left: 10px;
+            font-family: Verdana; 
+            font-size: 1.003em; 
+            font-style: normal; 
+            font-variant: normal; 
+            font-weight: normal; 
+    }
+    .rubric{
+         padding-top:8px;
+            font-family: Verdana; 
+            font-size: 1.003em; 
+            font-style: normal; 
+            font-variant: normal; 
+            font-weight: normal;
+    }
+    .rubricContent{
+            padding-top: 10px;
+            padding-left: 5px;
+            font-family: Verdana; 
+            font-size: 1.0em;
+            font-style: normal; 
+            font-variant: normal; 
+            font-weight: normal; 
+    }
+    .RubricValue > table
+    {
+        width: 100% !important;
+    } 
+    .RubricValue > table > tbody > tr > td 
+    {
+        padding: 10px !important;
+    } 
+    
+    .RubricValue{
+            padding-top: 8px;
+            padding-left: 10px;
+             padding-bottom: 15px;
+            font-family: Verdana; 
+            font-size:1.003em;
+            font-style: normal; 
+            font-variant: normal; 
+            font-weight: normal; 
+    }    
+    
+    .illustrationContent{ 
+            padding-left: 15px;
+            font-family: Verdana; 
+            font-size:1.0em; 
+    }    
+    .glossaryContent { 
+            padding-left: 15px;
+            font-family: Verdana; 
+            font-size:1.0em; 
+            
+    }    
+    .glossaryKey {  
+            font-size:1.0em;
+            font-weight: bolder; 
+           display: inline-block;
+    }   
+    .glossaryValue {  
+            font-size:1.003em;
+            display: inline-block;
+             
+    }   
+    .glossary{
+        display: inline;
+    }
+    .illustrationKey {  
+            font-size:1.0em;
+            font-weight: bolder; 
+           
+    }   
+     body > embed > svg > text {
+         /*font-family: inherit !important;*/
+
+     }
+     p {     
+    line-height: 1.2em;
+    }
+    .pageSummuryTable{ 
+                 
+            font-family: Verdana; 
+            font-size: 1.003em; 
+            font-style: normal; 
+            font-variant: normal; 
+            font-weight: normal; 
+            text-align: center;
+            width: 100%;
+    }
+   
+    .SummuryPageTitle{
+            font-family: Verdana; 
+            font-size: 1.2em;             
+            font-weight: bold; 
+
+    }
+    
+    .itemContent table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .itemContent table {
+       border-collapse: separate;
+        border-spacing: 0;
+    }
+
+    .itemContent > table, .itemContent > table > thead, .itemContent > table > thead > tr, 
+    .itemContent > table > thead > tr > td, .itemContent > table > tbody > tr, .itemContent > table > tbody > tr > td {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-weight: inherit;
+            font-style: inherit;
+            font-size: 100%;
+            font-family: inherit;                                   
+    }
+
+    .itemContent thead th {
+        border-left: none;
+    }
+
+    .itemContent tbody tr th {
+        text-align: left;
+    }
+    .itemContent tr th:nth-child(1) {
+        border-top: none;
+    }
+    .itemContent th {
+        border: solid 1px #ccc;
+        padding: 3px 10px;
+        font-weight: bold;
+    }
+    .itemContent td {
+        border-right: solid 1px #ccc !important;
+        border-bottom: solid 1px #ccc !important;
+        position: relative !important;
+    }   
+
+    .itemContent label {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        text-indent: -9999px;
+        overflow: hidden;
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAWCAYAAAAvg9c4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADHSURBVEhL7ZQxCoQwEEX3tF4hV/AK4g3sJIWFXWzTBEKKgEXsbKys0swymSGujYRlLRZ88JEh36dp5gU3cL90XVdwzhXHew/7vvPbB1k6TRPUdZ3SNE1x2raFZVnYQmQpFqqqSs9xHEFrnTLP82WwOwwDW4iTVAiRSljeto1PrsFu3/c8EScpXh3/rlSIYPeR8kQ8UuKRfi2VUvJEZCl+DaVd1yXx59K4Cu4Kay1biCyNMYIxBpRSxcF1GUJgw0GW/pJ/kQK8Ae4LxDPd7H2tAAAAAElFTkSuQmCC')
+        no-repeat 7px 5px;
+        -webkit-transition: background-color .3s linear;
+        -moz-transition: background-color .3s linear;
+        transition: background-color .3s linear;
+        -webkit-print-color-adjust: exact;    }
+
+    
+    img{
+        vertical-align:middle;
+        display: inline;
+    }
+   .eaxLable
+   {
+       font-style: italic;
+       font-weight: bold;
+       font-size: 1 em;
+   }
+
+   .eaxContainer
+   {    
+        display: flex;
+   }
+ 
+   </style>
+
+   <div class="font_preload" style="opacity: 0"> 
+	<span style="font-family:'math1da40657c9fece7e48d30af42d3'; "></span> 
+    <span style="font-family:'brack_sm2882ad605b1e27be87c7468'; "></span> 
+    <span style="font-family:'bracketse552f5417ff4680c6b50499'; "></span> 
+	
+</div>
+<div id="CoverPage" style='page-break-after: always; font-family: Verdana !important' >
+
+    @*----------------------------- Title Block ------------------------------*@
+        <div style="display: inline;">
+            <div style="display: inline;">
+                <img style="display: inline;" width="30%" height="70px"  alt="Smarter Balanced">
+            </div>
+            <div style="float: right; display: inline;" >
+                <div class="SummuryPageTitle" style="text-align: right">
+                    Sample Items Printout
+                </div>  
+                        @{int itemCount = 0; }
+                        @foreach (var item in Model)   
+                        {
+                            @foreach (var itemContent in item.Items)  
+                            {                
+                                { itemCount=itemCount+1; } 
+                            } 
+                        }                     
+                <div style="display: inline; float: right;"> 
+                    <div style="float: right"><strong>Total Items: @itemCount </strong></div> <br />
+                    <div  style="float: right">@DateTime.Now.ToString("dd-MMMM-yyyy") </div> 
+                </div>        
+            </div>
+        </div>
+    @*----------------------------- Title Block ------------------------------*@
+    @*----------------------------- Summury table Block ------------------------------*@
+    <div style="padding-top: 20px;font-size:1.003em;">    
+        @{int counter = 1; }
+        <table class="pageSummuryTable" border="1">
+        <tr style="text-align: center;">
+            <th style="text-align: center;">#</th>
+            <th style="text-align: center;">Item ID</th>
+            <th style="text-align: center;">Grade</th>
+            <th style="text-align: center;">Subject</th>
+            <th style="text-align: center;">Claim</th>
+            <th style="text-align: center;">Target</th>
+            <th style="text-align: center;">DOK</th>
+            <th style="text-align: center;">Type</th>         
+        </tr>    
+            @foreach (var items in Model) 
+            {  
+                @foreach (var question in items.Items) 
+                {
+                    <tr>
+                        <td style="width: 100px;"> @counter</td>
+                        <td style="width: 150px;"> @question.ItemKey</td>
+                        <td style="width: 120px;"> @question.GradeCode</td>
+                        <td style="width: 150px;"> @question.SubjectCode</td>
+                        <td style="width: 150px;"> @question.ClaimCode</td>
+                        <td style="width: 150px;"> @question.TargetShortName</td>
+                        <td style="width: 100px;">@question.DepthOfKnowledge</td>
+                        <td style="width: 200px;"> @question.ItemTypeCode</td>
+                    </tr>  
+                        { counter=counter+1; }   
+                }
+                
+            }
+        </table> 
+    </div>
+    @*----------------------------- Summury table Block ------------------------------*@
+    @*----------------------------- Summury table Block ------------------------------*@
+        <div style="padding-top: 25px;font-size: 1em;font-family: Verdana !important">
+            @if(Model.Where(x=>x.IsCalculatorRequired==true).Count()>0)
+            {
+                <div >
+                    <strong><i class="fa fa-calculator" aria-hidden="true"></i></strong>  : Calculator allowed.
+                </div> 
+            }
+           
+            @if(Model.Where(x=>x.IsPerformanceTask==true).Count()>0)
+            {
+                <div style="padding-top: 10px;" >
+                    <strong>PT : Performance Task  </strong>: If you selected a Performance Task item, all items in that Performance Task are included below even if only one item was selected (e.g., Multiple Choice, Short Answer, Extended Response, etc.). Performance Task items are indicated with "PT" next to the item ID number. 
+                </div>
+            }
+            
+        </div> 
+</div>
+
+<div id="ItemContent">
+@{int i = 1; int no=1; int count = 0;}
+@foreach (var item in Model) 
+{ 
+    if(@item.StimulusKey>0)
+    {
+    count = 1;i=no;
+    <div style="page-break-inside: avoid">     
+        <div class="subTitle" style="display: inline;">       
+            @foreach(var associateditem in item.AssociatedItems)
+            {
+                <div style="display: inline;">
+                        #@i - @associateditem  
+                    @if(count < item.AssociatedItems.Count())  {
+                        <span>,</span>  
+                    }                              
+                </div>            
+                {  i=i+1;count=count+1; }            
+            }         
+            @if(@item.IsPerformanceTask)
+            {
+                <strong>[PT]</strong>
+            }
+            <hr class="hrlinewithBlue">
+        </div>
+	 @*------------------------------------  stimulus block ---------------------------------*@
+        <div id="stimulus">		
+            @if(!string.IsNullOrEmpty(item.StimulusStemESN))
+            {
+                @Html.Raw(item.StimulusStemESN)
+            }
+            else
+            {
+                @Html.Raw(item.StimulusStemENG)
+            }				   
+        </div>
+    </div>  
+    }
+     
+	   @*------------------------------------  stimulus block ---------------------------------*@
+       @*------------------------------------  item stem block ---------------------------------*@
+            
+            @foreach (var itemContent in item.Items) 
+            {
+                <div class="item">
+                    
+                    <span class="itemNo" style="background-color: #dbdbdb;">
+                       #@no - @itemContent.ItemKey
+                        @if(@itemContent.IsCalculatorRequired)
+                        {
+                            <i class="fa fa-calculator" aria-hidden="true"></i>
+                        }   
+                    </span>
+                    <hr class="hrlinewithBlue">    
+               
+                    <div class="itemContent">
+                        @if(!string.IsNullOrEmpty(itemContent.ItemStemESN))
+                        {
+                            @Html.Raw(itemContent.ItemStemESN)  
+                            <ol type = "A">
+                                @foreach (var scoringOptionsESN in itemContent.ScoringOptionsESN) 
+                                {          
+                                        <li>
+                                            @Html.Raw(scoringOptionsESN.Value)
+                                            <br />
+                                        </li>                        
+                                }
+                            </ol>
+                        }
+                        else{
+
+                            @Html.Raw(itemContent.ItemStemENG)  
+                            <ol type = "A">
+                                @foreach (var scoringOptionsENG in itemContent.ScoringOptionsENG) 
+                                {          
+                                        <li>
+                                            @Html.Raw(scoringOptionsENG.Value)
+                                        </li>                        
+                                }
+                            </ol>
+                        }
+                    </div> 
+                @if(itemContent.ItemTypeCode=="WER")
+                {
+                 <div style="border: 1px dotted black;height: 870px;">   
+                    
+                   </div>                
+                }
+                else if(itemContent.ItemTypeCode=="SA")
+                {
+                    <div style="border: 1px dotted black; height: 435px;">
+                        
+                    </div>                  
+                }   
+                </div>
+                 
+               
+
+                //Display glossaries
+            @if(itemContent.ItemGlossariesENG!=null && itemContent.ItemGlossariesENG.Count()>0)
+            {
+                <div>
+                    <div class="subTitle">
+                    English glossary :
+                    </div>            
+                    <div class="glossaryContent" >
+                        @foreach (var glossaryENG in itemContent.ItemGlossariesENG) 
+                        {          
+                                <div class="glossary">
+                                    <div class="glossaryKey">@Html.Raw(glossaryENG.Key) :</div>
+                                    <div class="glossaryValue"> @Html.Raw(glossaryENG.Value)</div>        
+                                </div>  <br/>          
+                        }
+                          </div>
+                </div>
+            }
+            //Display illustration
+            @if(itemContent.Illustrations!=null && itemContent.Illustrations.Count()>0)
+            {
+                <div class="illustration" >
+                    <div class="subTitle">
+                    Illustration glossary:
+                    </div>            
+                    <div class="illustrationContent">
+                        @foreach (var illustration in itemContent.Illustrations) 
+                        {         
+                            <div style="page-break-inside: avoid">
+                                   <div class="illustrationKey">@Html.Raw(illustration.Key) :</div>
+                                  <div style="width: 35%;height: 35%;">  @Html.Raw(illustration.Value)</div>       
+                            </div><br/>          
+                        }
+                    </div>
+            </div>
+            }
+                {no=no+1;}   
+                <div>&nbsp;</div>
+		}
+        @*------------------------------------  item stem block ---------------------------------*@ 
+ <div>&nbsp;</div>
+ 
+}
+<div style='page-break-after: always;'\></div>
+ <div class="rubric" >
+            <div class="subTitle">
+               Rubric/Answer key : 
+               <hr class="hrlinewithBlue">
+            </div>            
+             <div class="rubricContent">
+                  @{int j = 1; }
+               @foreach (var item in Model) 
+                {  
+                    @foreach (var itemContent in item.Items) 
+                    {     
+                        <span class="itemNo" style=background-color: #dbdbdb;">
+                         #@j - @itemContent.ItemKey        
+                        </span>
+                         
+                        <div class="RubricValue">
+                            @Html.Raw(itemContent.Rubric)
+                                                    
+                        </div>
+                         { j=j+1; }   
+                    }
+                  
+                }
+                 
+            </div>
+    </div>
+
+ </div>
+    </div>
+</div>
+</html>
